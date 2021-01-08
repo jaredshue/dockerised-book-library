@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+header {
+    background-color: #485460;
+    padding: 30px 2%;
+}
+
+/* Globals */
+.simple-textbox {
+    outline: none;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.simple-button {
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.simple-button.info {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.simple-button.outline {
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.simple-button.outline.orange {
+    border-color: orange;
+    color: orange;
+}
+
+.alert {
+    display: block;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.alert.warning {
+    color: gold;
+    background-color: #AAAAAA;
+}
+
+/* Navbar Section */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar .navbar-logo {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar .navbar-logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar .navbar-links {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.navbar .navbar-links ul {
+    list-style: none;
+}
+
+.navbar .navbar-links ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar .navbar-links .navbar-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #DDDDDD;
+}
+
+.navbar .navbar-links .navbar-link:hover {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-links .navbar-link.active {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-search {
+    margin-left: auto;
+}
+
+/* Movies View */
+.movies-view {
+    margin: 2%;
+    display: none;
+}
+
+.movies-view.active {
+    display: block;
+}
+
+.movies-view ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.movies-view ul li {
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.movies-view ul li a {
+    cursor: pointer;
+}
+
+/* Login View */
+.login-view {
+    margin: 2%;
+    display: none;
+}
+
+.login-view.active {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login-view label {
+    display: block;
+    margin-top: 10%;
+}
+
+.login-view input {
+    display: block;
+    padding: 10px 300px 10px 10px;
+}
+
+.login-view button {
+    display: block;
+    margin-top: 10%;
+}
+
+/* Info View */
+.info-view {
+    margin: 2%;
+    display: none;
+}
+
+.info-view.active {
+    display: block;
+}
+
+.info-view .info-view-movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.info-view .info-view-movie img {
+    display: inline-block;
+}
+
+.info-view .info-view-movie section {
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.info-view .info-view-movie h1 {
+    font-size: 32px;
+    margin-bottom: 1%;
+}
+
+.info-view .info-view-movie h2 {
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+.info-view .info-view-movie p {
+    font-size: 24px;
+    margin-bottom: 2%;
+}
+
+.info-view .info-view-movie section ul {
+    list-style: none;
+}
+
+.info-view .info-view-movie section li {
+    display: inline-block;
+}
+
+.info-view .info-view-comment {
+    margin-top: 2%;
+}
+
+.info-view .info-view-comment label {
+    display: block;
+}
+
+.info-view .info-view-comment input {
+    display: block;
+}
+
+.info-view .info-view-comment button {
+    margin-top: 2%;
+    display: block;
+}

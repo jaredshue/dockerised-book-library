@@ -1,0 +1,28 @@
+{
+  "name": "TDD_with_Express_and_Docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-harp/TDD_with_Express_and_Docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-harp/TDD_with_Express_and_Docker/issues"
+  },
+  "homepage": "https://github.com/m-harp/TDD_with_Express_and_Docker#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "moment": "^2.29.1",
+    "supertest": "^6.0.1"
+  }
+}
